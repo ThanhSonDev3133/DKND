@@ -1,0 +1,26 @@
+.box-auth{
+    margin: 10rem;
+    background-color: white;
+    width: 30rem;
+    margin: auto;
+    height: 15rem;
+    margin-top: 12rem;
+}
+.auth-form{
+    text-align: center;
+    padding-top: 2rem;
+}
+.auth-form h1{
+    color: #27ae60;
+    font-weight: bold;
+}
+.auth-btn{
+    margin-top: 1rem;
+    text-align: center;
+}
+.btn-auth{
+    margin: auto!important;
+}
+.btn-auth:focus{
+    outline: 1px #27ae60;
+}

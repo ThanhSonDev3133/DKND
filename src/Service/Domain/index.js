@@ -1,0 +1,1 @@
+export const DOMAIN = 'https://web.truework.com.vn/api/'

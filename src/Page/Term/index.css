@@ -1,0 +1,137 @@
+body {
+  font-family: "Nunito";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.term-section {
+  width: 43.2%;
+  margin: auto;
+  text-align: left;
+  align-self: stretch;
+}
+.term-section p {
+  color: #828282;
+}
+.term-section .term-header {
+  text-align: center;
+  padding-top: 96px;
+}
+.term-section .term-header p:first-child {
+  color: #245b2d;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.term-section .term-header h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: black;
+}
+
+.term-content {
+  margin: 3rem;
+}
+.term-content p:last-child {
+  color: #9c9c9c;
+  font-size: 12px;
+  margin-top: 1rem;
+}
+.term-content .term-img {
+  width: 720px;
+  height: auto;
+}
+.term-content .term-img img {
+  width: 720px;
+  height: auto;
+}
+.btn-footer  a{
+  color: #27ae60;;
+}
+@media only screen and (max-width: 1366px) {
+  .term-section {
+    width: 55%;
+  }
+  .term-content .term-img {
+    width: 655px !important;
+    height: auto;
+  }
+  .term-content .term-img img {
+    width: 655px !important;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .term-section {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .term-section {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .term-section {
+    width: 79%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .term-section {
+    width: 95%;
+  }
+  .term-content .term-img {
+    width: 633px !important;
+    height: auto;
+  }
+  .term-content .term-img img {
+    width: 633px !important;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .term-section {
+      width: 95%;
+    }
+    .term-content .term-img {
+      width: 29rem !important;
+      height: auto;
+    }
+    .term-content .term-img img {
+      width: 29rem !important;
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .term-section {
+      width: 98%;
+    }
+    .term-content .term-img {
+      width: 374px !important;
+      height: auto;
+    }
+    .term-content .term-img img {
+      width: 374px !important;
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .term-section {
+      width: 98%;
+    }
+    .term-content .term-img {
+      width: 270px !important;
+      height: auto;
+    }
+    .term-content .term-img img {
+      width: 270px !important;
+      height: auto;
+    }
+  }

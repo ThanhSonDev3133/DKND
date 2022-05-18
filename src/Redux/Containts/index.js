@@ -1,0 +1,7 @@
+export const SIGNUP = 'SIGNUP'
+export const GETDATA = 'GETDATA'
+export const FETCH_USER_LIST = 'FETCH_USER_LIST'
+export const SEARCH_USER = 'SEARCH_USER'
+export const SET_SEARCH = 'SET_SEARCH'
+export const DETAIL_USER = 'DETAIL_USER'
+export const UPDATE_USER = 'UPDATE_USER'
