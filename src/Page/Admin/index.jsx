@@ -71,14 +71,13 @@ export default function Admin() {
   };
 
   const handleClick = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const { id, checked } = e.target;
     setIsCheck([...isCheck, id]);
     if (!checked) {
       setIsCheck(isCheck.filter((item) => item !== id));
     }
   };
-
   const handleUpdateUser = () => {
     dispatch(createAction(UPDATE_USER, true));
   };
@@ -135,68 +134,74 @@ export default function Admin() {
   }, [token]);
 
   const handleDeleleteAll = () => {
-    console.log('isCheck', isCheck);
+    console.log("isCheck", isCheck);
   };
   return (
     <div className="admin-tab">
       <Toolbar className="nav-search">
-        <Typography
-          sx={{ flex: "1 1 100%" }}
-          variant="h6"
-          id="tableTitle"
-          component="div"
-          className="text-success text-first"
-        >
-          Danh sách đăng ký
-        </Typography>
-        <Typography
-          sx={{ flex: "1 1 100%" }}
-          variant="h6"
-          id="tableTitle"
-          component="div"
-          className="text-success text-second"
-        >
-          Danh sách
-        </Typography>
-        <div className="form-search d-flex">
-          <div className="form-input d-flex ">
-            <input
-              type="text"
-              name="keyword"
-              id="keyword"
-              placeholder="Tìm kiếm tên "
-              ref={refContainer}
-            />
-          </div>
-          <div className="form-input d-flex">
-            <input
-              type="text"
-              name="search"
-              id="search"
-              placeholder="Tìm kiếm số điện thoại"
-            />
-            {isSearch ? (
-              <button className="btn btn-danger" onClick={handleCancelSearch}>
-                <span>Hủy</span>
-              </button>
-            ) : null}
-            <button className="btn btn-success ml-1" onClick={handleSearch}>
-              <i class="fa fa-search"></i>
-              <span>Tìm kiếm</span>
-            </button>
-          </div>
-        </div>
+        {isCheck.length !== 0 ? (
+          <span className="trash"
+            onClick={() => handleDeleleteAll()}
+          >
+            <i class="fa fa-trash"></i>
+          </span>
+        ) : (
+          <>
+            <Typography
+              sx={{ flex: "1 1 100%" }}
+              variant="h6"
+              id="tableTitle"
+              component="div"
+              className="text-success text-first"
+            >
+              Danh sách đăng ký
+            </Typography>
+            <Typography
+              sx={{ flex: "1 1 100%" }}
+              variant="h6"
+              id="tableTitle"
+              component="div"
+              className="text-success text-second"
+            >
+              Danh sách
+            </Typography>
+            <div className="form-search d-flex">
+              <div className="form-input d-flex ">
+                <input
+                  type="text"
+                  name="keyword"
+                  id="keyword"
+                  placeholder="Tìm kiếm tên "
+                  ref={refContainer}
+                />
+              </div>
+              <div className="form-input d-flex">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Tìm kiếm số điện thoại"
+                />
+                {isSearch ? (
+                  <button
+                    className="btn btn-danger"
+                    onClick={handleCancelSearch}
+                  >
+                    <span>Hủy</span>
+                  </button>
+                ) : null}
+                <button className="btn btn-success ml-1" onClick={handleSearch}>
+                  <i class="fa fa-search"></i>
+                  <span>Tìm kiếm</span>
+                </button>
+              </div>
+            </div>
+          </>
+        )}
       </Toolbar>
       <Box className="box-admin">
         <Paper>
           <TableContainer>
-            <button
-              className="btn btn-danger"
-              onClick={() => handleDeleleteAll()}
-            >
-              Delete
-            </button>
-
             <Table aria-labelledby="tableTitle">
               <TableHead>
                 <TableRow>

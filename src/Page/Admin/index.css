@@ -3,6 +3,12 @@
   margin: auto;
   background-color: white;
 }
+.admin-tab .trash{
+  margin-left: 0.4rem;
+}
+.admin-tab .trash:hover i{
+  color: rgb(184, 183, 183);
+}
 .nav-search {
   margin-top: 3rem;
 }
@@ -79,21 +85,63 @@
   color: white;
 }
 @media only screen and (max-width: 1880px) {
+  .form-search input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: none !important;
+    width: 65%;
+    margin-left: auto;
+  }
   .form-search .btn {
-    width: 50%;
-    margin-left: 1.5rem;
+    width: 40%;
+    margin-left: 1rem;
+  }
+  .form-search .btn-danger{
+    width: 20%;
+  }
+  .form-search .btn-success {
+    margin-left: 2rem!important;
   }
 }
 @media only screen and (max-width: 1868px) {
+  .form-search input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: none !important;
+    width: 60%;
+    margin-left: auto;
+  }
   .form-search .btn {
-    width: 45%;
+    width: 40%;
     margin-left: 1rem;
+  }
+  .form-search .btn-danger{
+    width: 20%;
   }
 }
 @media only screen and (max-width: 1852px) {
+  .form-search input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: none !important;
+    width: 60%;
+    margin-left: auto;
+  }
   .form-search .btn {
-    width: 50%;
+    width: 40%;
     margin-left: 1rem;
+  }
+  .form-search .btn-danger{
+    width: 20%;
   }
 }
 @media only screen and (max-width: 1838px) {
@@ -110,6 +158,9 @@
   .form-search .btn {
     width: 40%;
     margin-left: 1rem;
+  }
+  .form-search .btn-danger{
+    width: 20%;
   }
 }
 @media only screen and (max-width: 1815px) {
@@ -128,6 +179,9 @@
   .form-search .btn {
     width: 40%;
     margin-left: 1rem;
+  }
+  .form-search .btn-danger{
+    width: 20%;
   }
 }
 @media only screen and (max-width: 1622px) {
@@ -154,6 +208,9 @@
     width: 45%;
     margin-left: 1rem;
   }
+  .form-search .btn-danger{
+    width: 20%;
+  }
 }
 @media only screen and (max-width: 1487px) {
   .form-search .form-input {
@@ -175,6 +232,9 @@
   .form-search .btn {
     width: 40%;
   }
+  .form-search .btn-danger{
+    width: 20%;
+  }
 }
 @media only screen and (max-width: 1366px) {
   .form-search .form-input:nth-child(1) input {
@@ -188,16 +248,22 @@
     width: 50%;
     margin-left: 3.2rem;
   }
+  .form-search .btn-danger{
+    width: 20%;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .form-search .btn {
     width: 50%;
     margin-left: 2rem;
   }
+  .form-search .btn-danger{
+    width: 20%;
+  }
 }
 @media only screen and (max-width: 1068px) {
   .form-search .form-input .btn-danger {
-    width: 25% !important;
+    width: 20% !important;
     margin-left: 1rem !important;
   }
   .form-search .form-input .btn-success {
@@ -253,11 +319,11 @@
     width: 95%;
   }
   .form-search .form-input .btn-danger {
-    width: 30% !important;
+    width: 25% !important;
     margin-left: 1rem !important;
   }
   .form-search .form-input .btn-success {
-    width: 30% !important;
+    width: 25% !important;
     margin-left: 0.5rem !important;
   }
   .form-search .btn-success span {
